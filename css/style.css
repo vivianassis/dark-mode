@@ -1,0 +1,39 @@
+@charset "UTF-8";
+:root {
+  --bg-Color: rgb(250, 248, 248);
+  --tittle: rgb(59, 59, 59);
+  --text-color: rgb(66, 65, 66);
+  --a-color: rgb(138, 32, 5);
+  --hover-color: rgb(255, 72, 72);
+}
+
+/*DARKMODE COM VARIÁVEIS
+(para fucionar, tem que usar no root da classe 'darkmode' os mesmos nomes das variáveis padrão/
+/====================================================*/
+.dark-mode:root {
+  --bg-Color: rgb(48, 47, 47);
+  --tittle: rgb(204, 200, 200);
+  --text-color: rgb(180, 177, 177);
+  --a-color: rgb(52, 175, 21);
+  --hover-color: rgb(125, 255, 125);
+}
+
+/*======================================================/
+/fim do dark mode*/
+body {
+  background-color: var(--bg-Color);
+  color: var(--text-color);
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  color: var(--tittle);
+}
+
+body a {
+  color: var(--a-color);
+}
+
+body a:hover {
+  color: var(--hover-color);
+}
+/*# sourceMappingURL=style.css.map */
